@@ -18,4 +18,4 @@ Java 8, Swing, [Apache PDFBox](https://pdfbox.apache.org/), ElasticSearch and
 * `mvn exec:java` : index and search
 * `mvn exec:java -Dexec.args="INDEX"` : index only
 * `mvn exec:java -Dexec.args="SEARCH"` : search only
-* `mvn exec:java -Dexec.args="BOTH"` : index and search
+* `mvn exec:java -Dexec.args="BOTH"` : index and search# engine
