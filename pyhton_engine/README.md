@@ -1,20 +1,3 @@
-# Verbose-The-Indexer
-
-Verbose is a python based application which helps you to search in txt as well as pdf files easily by using indexing and providing a good User Interface.
-
-Setting Up
-
-```
-sudo apt-get install libgtk-3-dev
-pip3 install -r requirements.txt
-```
-
-To run
-
-```
-python3 main.py
-```
-
 ### Salient Features:
 
 * Multiple Word Searching
@@ -41,10 +24,4 @@ The data structures used in the project are Dictionary, Lists and Sets.
 
 
 ### References:
-* Peter Norvig's Did You Mean Implementation [Link](norvig.com/spell-correct.html)
-
-* Quora's answer that gave us basic idea [Link](http://qr.ae/TU1TXh)
-
 * GTK+ Documentation [Link](https://python-gtk-3-tutorial.readthedocs.io/en/latest/)
-
-* Dataset by [Project Guntenburg](https://www.guntenburg.org), [20Newsgroup](http://qwone.com/~jason/20Newsgroups/ ) & various other sites.
