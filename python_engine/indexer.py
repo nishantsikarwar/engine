@@ -23,6 +23,7 @@ def main_search(tableold,input_file):
 
 def search_PDF(tableold, input_file,enc):
 	table={}
+	# relevant={}
 	if check_dump(input_file):
 		table = load_dump(input_file)
 	else:
@@ -38,11 +39,11 @@ def search_PDF(tableold, input_file,enc):
 					j = j+1
 					if wordl in table:
 						if i in table[wordl]:
-							table[wordl][i].append(j)
+							table[wordl+x[1]][i].append(j)
 						else:
-							table[wordl][i] = [j]
+							table[wordl+x[1]][i] = [j]
 					else:
-						table[wordl] = {i:[j]}
+						table[wordl+x[1]] = {i:[j]}
 		save_dump(table,input_file)
 
 	tableold = merge_dump(tableold,table,enc)
@@ -56,7 +57,7 @@ def search_text(tableold, input_file,enc):
 		text = open(input_file,'rb')
 		text = re.split("\r\n|\n", text.read().decode("utf-8",errors = "ignore"))
 		i = 0
-		j=0
+		j = 0
 		for line in text:
 			i = i+1
 			x = list(filter(None,re.split('(?:'+regex_query+')+',line)))

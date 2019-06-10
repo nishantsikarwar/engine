@@ -43,10 +43,15 @@ def generate_page_list(entry):
 	global file_chart
 	global rev_file_chart
 	global last_result
+	i=0
 	for data in last_result[1][rev_file_chart[entry]]:
-		list_box2.insert(ListBoxRowWithDataMod("Line/Page Number: " + str(data),str(entry)) ,0)
+		if i==0:
+			list_box2.insert(ListBoxRowWithDataMod("Line/Page Number: " + str(data)+ "\nOne day a gold convoy came down from Ballarat to Melbourne, and",str(entry)) ,0)
+		if i==1:
+			list_box2.insert(ListBoxRowWithDataMod("Line/Page Number: " + str(data)+ "\nI had called upon my friend, Mr. Sherlock Holmes, one day in the",str(entry)) ,0)
+		i+=1		
 	# list_box2.connect('key-release-event', on_key_enter(entry,row.data))
-	# list_box2.connect('row-selected', lambda widget, row: print(entry + row.data.split("Number: ")[1]) )
+	list_box2.connect('row-selected', lambda widget, row: print(entry + row.data.split("Number: ")[1]) )
 	list_box2.show_all()
 
 def search_it(entry):

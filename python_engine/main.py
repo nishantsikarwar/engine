@@ -8,7 +8,7 @@ table = {}
 file_chart = {}
 rev_file_chart = {}
 last_result = []
-
+# relevant = {}
 from ui import *
 
 '''

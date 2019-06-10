@@ -1,4 +1,4 @@
 pdftotext
 nltk
-gi
+pgi
 pyGObject
