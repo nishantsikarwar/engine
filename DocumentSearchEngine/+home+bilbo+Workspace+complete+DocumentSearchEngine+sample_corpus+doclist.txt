@@ -1,0 +1,11 @@
+{
+    "dirname": "/home/bilbo/Workspace/complete/DocumentSearchEngine/sample_corpus/",
+    "/home/bilbo/Workspace/complete/DocumentSearchEngine/sample_corpus/1009.6119.pdf": {
+        "wordcount": 11414,
+        "lastmodtime": "Fri Jun  7 04:33:37 2019"
+    },
+    "/home/bilbo/Workspace/complete/DocumentSearchEngine/sample_corpus/pdf.pdf": {
+        "wordcount": 687,
+        "lastmodtime": "Mon Jun 10 01:16:25 2019"
+    }
+}
